@@ -1,0 +1,145 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(145, 99, 112, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header {
+  text-align: center;
+}
+#title {
+  font-family: "Barlow", sans-serif;
+  font-size: 2.5em;
+  color: white;
+}
+#description {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.4em;
+  color: white;
+}
+#survey-form {
+  background-color: rgba(10, 2, 30, 0.7);
+  border-radius: 0.5%;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  width: 60vw;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+}
+@media only screen and (max-width: 800px) {
+  #survey-form {
+    width: 90%;
+  }
+}
+.form-group {
+  margin: 1.5em;
+  left: 0em;
+  right: 0em;
+}
+#name-label {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2em;
+  text-indent: 50px;
+  margin: 0em 0em 0.5em 0em;
+}
+#name {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
+  display: block;
+  width: 96%;
+  height: 2em;
+  padding-left: 1em;
+}
+#email-label {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2em;
+}
+#email {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
+  display: block;
+  width: 96%;
+  height: 2em;
+  padding-left: 1em;
+}
+#number-label {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2em;
+}
+#number {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
+  display: block;
+  width: 96%;
+  height: 2em;
+  padding-left: 1em;
+}
+.long-labels {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2em;
+}
+#dropdown {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
+  width: 96%;
+  height: 2em;
+  padding-left: 1em;
+  cursor: pointer;
+}
+.user-preference-label {
+  display: block;
+  margin-top: 5px;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.7em;
+}
+.input-radio {
+  width: 1.5em;
+  height: 2em;
+  padding-left: 1em;
+  cursor: pointer;
+}
+.prefered-day-label {
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.7em;
+}
+.prefered-day {
+  font-size: 1.25em;
+  width: 1em;
+  height: 0.5em;
+  cursor: pointer;
+}
+#comment {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25em;
+  width: 100%;
+  height: 7em;
+  padding: 0.5em 0em 0em 0.5em;
+  resize: vertical;
+}
+#submit {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9em;
+  float: center;
+  width: 96%;
+  height: 4em;
+  position: relative;
+  left: 1.5em;
+  bottom: 0.5em;
+  cursor: pointer;
+}

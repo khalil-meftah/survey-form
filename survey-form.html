@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey-form.css"></link>
+    <title>Survey form</title>
+</head>
+
+      <div>
+        <!--Barlow bold 700-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet"> 
+        <!--IBM Plex Sans Light 300 italic-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <!--Yanone Kaffeesatz-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet"> 
+        <!-- Barlow Medium 500 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet"> 
+      </div>
+      <main>
+      <header id="header">
+        <h1 id="title">Subscribe in our Html/CSS Course</h1>
+        <p id="description">Join us in our free course to learn basics of front end developpement</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Full Name </label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" name="age" type="number" min="10" max="100" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+          <p class="long-labels">What is your current Html/Css skill level ?</p>
+          <select id="dropdown" name="role" required>
+            <option selected="" value="">--Select current skill level-- </option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="long-labels">Chose your prefered format for the tutorials:</p>
+          <label class="user-preference-label">
+            <input class="input-radio" name="user-preference" type="radio" value="text format" required>Text Fomat
+          </label>
+          <label class="user-preference-label">
+            <input class="input-radio" name="user-preference" type="radio" value="video format" required>Video Fomat
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="long-labels">Chose the days you want the courses to be sent to your email:</p>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="everyday" type="checkbox">Everyday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="monday" type="checkbox">Monday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="tuesday" type="checkbox">Tuesday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="wednesday" type="checkbox">Wednesday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="thursday" type="checkbox">Thursaday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="friday" type="checkbox">Friday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="saturday" type="checkbox">Saturday</label>
+          <label class="prefered-day-label"><input class="prefered-day" name="prefered-day" value="sunday" type="checkbox">Sunday</label>
+        </div>
+        <div class="form-group">
+          <p class="long-labels">If you have any other comment you can write it here:</p>
+          <textarea id="comment" name="comment" placeholder="Enter your coment ..." ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+      </main>
+      
+</body>
+</html>
